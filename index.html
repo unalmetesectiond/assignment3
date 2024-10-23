@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Anime Quiz</h1>
+    
+    <div id="auth_box">
+        <div class="auth">
+            <p>Press the button below</p>
+            <button onclick="quiz_time()">Start</button>
+        </div>
+    </div>
+    
+
+    <form id="quiz" style="display: none;">
+ 
+        <div id="bar_box">
+            <div id="bar"></div>
+        </div>
+        <div id="question_count">Completed 0 out of 4 questions</div>
+
+        <div class="question">
+            <label>1. Who is not part of Luffy's crew?</label><br>
+            <input type="radio" name="q1" value="Zoro"> Zoro<br>
+            <input type="radio" name="q1" value="Sanji"> Sanji<br>
+            <input type="radio" name="q1" value="Natsu"> Natsu<br>
+        </div>
+        
+        <div class="question">
+            <label>2. What is the name of the village Naruto grew up in?</label><br>
+            <input type="radio" name="q2" value="Konoha"> Konoha<br>
+            <input type="radio" name="q2" value="Suna"> Suna<br>
+            <input type="radio" name="q2" value="Iwa"> Iwa<br>
+        </div>
+
+        <div class="question">
+            <label>3. What is the name of the main character in 'Attack on Titan'?</label><br>
+            <input type="radio" name="q3" value="Eren"> Eren<br>
+            <input type="radio" name="q3" value="Levi"> Levi<br>
+            <input type="radio" name="q3" value="Erwin"> Erwin<br>
+        </div>
+
+        <div class="question">
+            <label>4. What is the goal of the protagonist in 'Demon Slayer'?</label><br>
+            <input type="radio" name="q4" value="Become a Hashira"> Become a Hashira<br>
+            <input type="radio" name="q4" value="Turn his sister back into a human"> Turn his sister back into a human<br>
+            <input type="radio" name="q4" value="Defeat the Demon King"> Defeat the Demon King<br>
+        </div>
+
+        <button type="button" id="submit_button">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
